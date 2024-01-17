@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<table>
+    <tr>
+<th> Id </th>
+<th> Name </th>
+</tr>
+@{
+    foreach(var emp in ViewBag.list)
+    {
+<tr>
+<td> @emp.Id </td>
+<td> @emp.Nam </td></tr>        
+    }
+}
+</table>
